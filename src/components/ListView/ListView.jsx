@@ -4,11 +4,13 @@ import './ListView.css';
 
 function ListView({ items }) {
     return (
-      <div className={'ListView'}>
-        {items.map((item) => (
-          <ShopItem key={item.id} item={item.data} />
-        ))}
-      </div>
+      <div className='items'>
+      {items.map((el, i) => <ShopItem img={el.img} 
+                                      name={el.name} 
+                                      color={el.color} 
+                                      price={el.price} 
+                                      key={i}/>)}
+    </div>
     );
   }
 

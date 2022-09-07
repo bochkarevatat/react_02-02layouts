@@ -6,10 +6,12 @@ function CardsView({cards}){
 
     return (
         <div className='cards'>
-            {cards.map((card) => (
-        <ShopCard key={card.id} card={card.data}/>
-        ))}
-        </div>
+      {cards.map((el, i) => <ShopCard name={el.name} 
+                                 price={el.price} 
+                                 color={el.color} 
+                                 img={el.img} 
+                                 key={i}/>)}
+    </div>
     )
 }
 export default CardsView;
