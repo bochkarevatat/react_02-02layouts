@@ -1,0 +1,33 @@
+.card-item{
+  display: flex;
+  background-color: #f5f5f5;
+  height: 90px;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-title{
+    text-transform: uppercase;
+}
+.item-button{
+    border-radius: 13px;
+    width: 130px;
+    height: 25px;
+    border: 1px solid red;
+    color: red;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+img {
+    width: 115px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .card-color{
+    font-size: 20px;
+    text-align: center;
+  }
+  .price{
+font-size: 20px;
+  }
+  
